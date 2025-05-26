@@ -4,7 +4,7 @@ import com.icerovah.kizuna2magisk.util.ModuleUtil;
 
 public class ModulePackager {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) {
         // 1. 清理临时目录
         ModuleUtil.clearTempDir();
 
