@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Icon frameRate="1" height="168" resDensity="480" screenWidth="1080" version="1" width="168">
+  <ExternalCommands/>
+  <VariableBinders>
+    <ContentProviderBinder columns="weather_type,temperature" countName="hasweather" uri="content://weather/actualWeatherData/1">
+      <Variable column="temperature" name="weather_temperature" type="number"/>
+      <Variable column="weather_type" name="weather_id" type="number"/>
+      <Trigger>
+        <VariableCommand expression="ifelse(#weather_id}25||#weather_id{0,0, (#weather_id}=4**#weather_id{=6||#weather_id}=8**#weather_id{=11||#weather_id==25),4,#weather_id}=13**#weather_id{=17,13 ,#weather_id}=18**#weather_id{=21||#weather_id==23,18,#weather_id)" name="weather_id"/>
+      </Trigger>
+    </ContentProviderBinder>
+  </VariableBinders>
+  <!-- IconWeather2	源图+数字天气 -->
+
+  <Image align="center" alignV="center" src="IconWeather2_src/icon_bg.png" x="84" y="84"/>
+  <Image align="center" alignV="center" src="IconWeather2_src/weather.png" srcid="#weather_id" x="84" y="65"/>
+  <Text align="center" color="#ffffff" size="28" textExp="#weather_temperature+&apos;°&apos;" x="84" y="108"/>
+</Icon>

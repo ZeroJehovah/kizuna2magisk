@@ -1,0 +1,7 @@
+id=HyperOS_KizunaAI
+name=HyperOS爱酱手绘图标包
+author=酷安@谏山黃泉
+description=基于完美图标计划模块二改，图标包来自http://www.kizuna.com.cn/，请支持原作者
+version={versionName}
+versionCode={versionCode}
+updateJson=https://raw.githubusercontent.com/ZeroJehovah/kizuna2magisk/refs/heads/master/module/update.json

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Icon frameRate="1" height="168" resDensity="480" screenWidth="1080" type="awesome" useVariableUpdater="DateTime.Minute" version="1" width="168">
+  <ExternalCommands/>
+  <VariableBinders/>
+  <!-- IconCalendar2	图片日历图标 -->
+
+  <Image align="center" alignV="center" src="IconCalendar2_src/icon_bg.png" x="84" y="84"/>
+  <Image align="center" alignV="center" alpha="186" src="IconCalendar2_src/week.png" srcid="#day_of_week" x="84" y="38"/>
+  <Time align="center" alignV="center" format="dd" space="1" src="IconCalendar2_src/date.png" x="84" y="99"/>
+</Icon>
